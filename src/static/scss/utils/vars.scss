@@ -1,9 +1,14 @@
 // Font
-$mainFont: 'Montserrat', Helvetica, Arial, sans-serif;
-$mainFontColor: #101010;
-$mainFontSize: 18px;
-$mainFontWeight: 400;
-$mainLineHeight: 1.4;
+//$mainFont: Reg, Helvetica, Arial, sans-serif;
+//$mainFontColor: #101010;
+//$mainFontSize: 18px;
+//$mainFontWeight: 400;
+//$mainLineHeight: 1.4;
+
+//Colors
+$baseColorLight: #FF006E;
+$baseColorDark: #0A203E;
+
 
 // Media screens
 $desktopWidth: 1280px;
@@ -11,3 +16,9 @@ $smDesktopWidth: 980px;
 $tableWidth: 768px;
 $phoneWidth: 480px;
 $smPhoneWidth: 320px;
+
+%wrp {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+

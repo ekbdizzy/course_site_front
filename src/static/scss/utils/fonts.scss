@@ -1,4 +1,20 @@
 @font-face {
-  font-family: "Sans";
-//  src: url('/static/fonts/font.ttf');
-}
+  font-family: "Reg";
+  src: url('/static/fonts/Nunito-Regular.ttf');
+};
+
+@font-face {
+  font-family: "Bold";
+  src: url('/static/fonts/Nunito-Bold.ttf');
+};
+
+@font-face {
+  font-family: "Light";
+  src: url('/static/fonts/Nunito-Light.ttf');
+};
+
+@font-face {
+  font-family: "Semibold";
+  src: url('/static/fonts/Nunito-Semibold.ttf');
+};
+
