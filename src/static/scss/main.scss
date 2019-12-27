@@ -1,8 +1,8 @@
-@import "utils/resets";
-@import "utils/libs";
-@import "utils/fonts";
-@import "utils/vars";
-@import "utils/mixins";
+@import "resets";
+@import "libs";
+@import "fonts";
+@import "vars";
+@import "mixins";
 
 .wrapper {
   @extend %wrp;
@@ -68,8 +68,13 @@
 
 .promo {
 
-  &__image {
-    position: relative;
+
+  &__slogan {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
   }
 }
 

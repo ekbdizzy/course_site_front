@@ -6,6 +6,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     devtool: 'cheap-module-eval-source-map',
     devServer: {
         contentBase: baseWebpackConfig.externals.paths.dist,
+        open: 'Google Chrome',
         overlay: {
             warnings: true,
             errors: true
@@ -19,7 +20,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     ],
 });
 
-module.exports = new Promise((resolve, reject) => {
+module.exports = new Promise((resolve, rejecct) => {
     resolve(devWebpackConfig);
 });
 

@@ -20,7 +20,7 @@ module.exports = {
     output: {
         filename: `${PATHS.static}js/[name].js`,
         path: PATHS.dist,
-        publicPath: '/'
+        publicPath: ''
     },
     module: {
         rules: [
@@ -91,7 +91,7 @@ module.exports = {
     },
     resolve: {
         alias: {
-            '~': 'src'
+            '~': PATHS.src
         }
     },
     plugins: [
