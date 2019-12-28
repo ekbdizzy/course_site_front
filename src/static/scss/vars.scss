@@ -8,6 +8,7 @@
 //Colors
 $baseColorLight: #FF006E;
 $baseColorDark: #0A203E;
+$backColor: #F1F1F1;
 
 
 // Media screens
@@ -21,5 +22,6 @@ $smPhoneWidth: 320px;
   max-width: 1200px;
   margin: 0 auto;
   height: 100%;
+  padding: 0.5em;
 }
 

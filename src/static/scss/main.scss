@@ -4,8 +4,16 @@
 @import "vars";
 @import "mixins";
 
+
 .wrapper {
   @extend %wrp;
+}
+
+.title {
+  font-family: Bold, sans, serif;
+  font-size: 1.5em;
+  color: black;
+  text-align: center;
 }
 
 .top_nav {
@@ -21,13 +29,6 @@
     flex-direction: column;
   }
 
-  .text_logo {
-    font-family: Bold, sans, serif;
-    font-size: 1.5em;
-    color: black;
-
-  }
-
   .menu {
     display: flex;
     flex-wrap: wrap;
@@ -41,7 +42,7 @@
   }
 
   a {
-    font-family: Reg;
+    font-family: Reg, sans-serif;
     color: black;
     padding: 0 0.5em;
     opacity: 1;
@@ -54,32 +55,85 @@
       margin: 0.3em 0;
     }
   }
-
-  .login {
-    background-color: $baseColorDark;
-    padding: 0.5em 1em;
-    border-radius: 1.5em;
-    color: white;
-    @media screen and (max-width: $tableWidth) {
-      margin: 0.3em 0;
-    }
-  }
 }
 
 .promo {
-
-
   &__slogan {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+
+    h1 {
+      font-family: Bold, sans, serif;
+      font-size: 2em;
+      color: white;
+      flex-basis: 20%;
+    }
+
+    @media screen and (max-width: $tableWidth) {
+      align-content: flex-start;
+    }
+
   }
 }
 
-h1 {
-  top: 5px;
+.main_page__button {
+
+  font-family: Reg, sans-serif;
+  font-size: 0.85em;
+  width: fit-content;
+  padding: 0.5em 1.2em !important;
+  border-radius: 1.5em;
+  opacity: 1;
+
+  &-primary {
+    background-color: $baseColorLight;
+    color: white;
+
+    &:hover {
+      opacity: .9;
+    }
+  }
+
+  &-login {
+    background-color: $baseColorDark;
+    color: white !important;
+
+    @media screen and (max-width: $tableWidth) {
+      margin: 0.3em 0;
+    }
+  }
 }
 
+.content-block {
+  padding: 1em 0;
 
+  &__addon {
+    background-color: $backColor;
+  }
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  justify-items: center;
+
+  @media screen and (max-width: $tableWidth) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.align-center {
+  margin: 1em auto;
+  text-align: center;
+}
+
+.teachers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
