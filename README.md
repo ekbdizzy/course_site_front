@@ -1,6 +1,7 @@
 ## Frontend for course site on DRF
 Before start you should build project:
 ~~~
+npm install
 npm run build 
 ~~~
 
