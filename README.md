@@ -4,15 +4,15 @@ Before start you should build project:
 npm run build 
 ~~~
 
-###Webpack development server
+### Webpack development server
 ~~~
 npm run dev
 ~~~
 
-###Webpack config:
+### Webpack config:
 webpack_config/
 
-###Modules
+### Modules
 babel<br>
 webpack<br>
 sass-loader<br>
