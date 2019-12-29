@@ -26,8 +26,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --open --config build/webpack.dev.conf.js",
-    "build": "webpack --config build/webpack.build.conf.js"
+    "dev": "webpack-dev-server --open --config webpack_config/webpack.dev.conf.js",
+    "build": "webpack --config webpack_config/webpack.build.conf.js"
   },
   "browserslist": [
     "> 1%",

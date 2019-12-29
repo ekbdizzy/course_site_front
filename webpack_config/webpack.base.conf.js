@@ -40,7 +40,7 @@ module.exports = {
                 test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
                 loader: 'file-loader',
                 options: {
-                    name: '[name].[ext]'
+                    name: 'fonts/[name].[ext]'
                 }
             },
             {
@@ -105,8 +105,7 @@ module.exports = {
         }),
         new CopyWebpackPlugin([
             {from: `${PATHS.src}/${PATHS.static}img`, to: `${PATHS.static}img`},
-            {from: `${PATHS.src}/${PATHS.static}fonts`, to: `${PATHS.static}fonts`},
-            // copy here files like sitemap.xml, robots.txt, etc
+            {from: `${PATHS.src}/${PATHS.static}fonts`, to: `${PATHS.static}css/fonts`},
             {from: `${PATHS.src}/utils`, to: ''}
         ])
     ]
