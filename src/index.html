@@ -18,14 +18,14 @@
     <form class="login_form" action="">
         <div class="form_field">
             <label for="email">Электронная почта:</label>
-            <input class="input" type="email" id="email" placeholder="yourmail@mail.ru"/>
+            <input class="input" type="email" id="email" placeholder="yourmail@mail.ru" autocomplete="username"/>
         </div>
         <div class="form_field">
             <label for="password">Пароль:</label>
-            <input class="input" type="password" id="password" placeholder="Пароль"/>
+            <input class="input" type="password" id="password" placeholder="Пароль" autocomplete="current-password"/>
         </div>
         <div class="form_field">
-            <button class="main_page__button main_page__button-primary main_page__button-login_form" type="submit">
+            <button class="main_page__button main_page__button-primary main_page__button-login_form" type="submit" id="login_form_btn">
                 Войти
             </button>
         </div>
@@ -39,18 +39,18 @@
         </div>
         <div class="form_field">
             <label for="reg_email">Электронная почта:</label>
-            <input class="input" type="email" id="reg_email" placeholder="yourmail@mail.ru"/>
+            <input class="input" type="email" id="reg_email" placeholder="yourmail@mail.ru" autocomplete="username"/>
         </div>
         <div class="form_field">
             <label for="reg_password">Пароль:</label>
-            <input class="input" type="password" id="reg_password" placeholder="Пароль"/>
+            <input class="input" type="password" id="reg_password" placeholder="Пароль" autocomplete="current-password"/>
         </div>
         <div class="form_field">
             <input type="checkbox" id="reg_rules">
             <label for="reg_rules">Согласен с условиями</label>
         </div>
         <div class="form_field">
-            <button class="main_page__button main_page__button-primary main_page__button-login_form" type="submit">
+            <button class="main_page__button main_page__button-primary main_page__button-login_form" type="submit" id="reg_form_btn">
                 Зарегистрироваться
             </button>
         </div>
