@@ -110,6 +110,12 @@ module.exports = {
                 filename: './course_list.html'
             },
         ),
+        new HtmlWebpackPlugin({
+                hash: false,
+                template: `${PATHS.src}/web_python_lessons.html`,
+                filename: './web_python_lessons.html'
+            },
+        ),
 
         new CopyWebpackPlugin([
             {from: `${PATHS.src}/${PATHS.static}img`, to: `${PATHS.static}img`},

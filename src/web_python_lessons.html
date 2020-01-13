@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список курсов</title>
+</head>
+<body>
+
+<!--Hidden login_form block -->
+<div class="auth">
+    <div id="close_auth">X</div>
+    <div class="entry_title">
+        <div class="title title__login title__login-active" id="login_title">Войти</div>
+        <div class="title title__login" id="reg_title">Регистрация</div>
+    </div>
+
+    <!--Login form-->
+    <form class="login_form" action="">
+        <div class="form_field">
+            <label for="email">Электронная почта:</label>
+            <input class="input" type="email" id="email" placeholder="yourmail@mail.ru"/>
+        </div>
+        <div class="form_field">
+            <label for="password">Пароль:</label>
+            <input class="input" type="password" id="password" placeholder="Пароль"/>
+        </div>
+        <div class="form_field">
+            <button class="main_page__button main_page__button-primary main_page__button-login_form" type="submit">
+                Войти
+            </button>
+        </div>
+    </form>
+
+    <!--Registration form-->
+    <form class="registration_form" action="">
+        <div class="form_field">
+            <label for="reg_name">Ваше имя:</label>
+            <input class="input" type="text" id="reg_name" placeholder="Ваше имя"/>
+        </div>
+        <div class="form_field">
+            <label for="reg_email">Электронная почта:</label>
+            <input class="input" type="email" id="reg_email" placeholder="yourmail@mail.ru"/>
+        </div>
+        <div class="form_field">
+            <label for="reg_password">Пароль:</label>
+            <input class="input" type="password" id="reg_password" placeholder="Пароль"/>
+        </div>
+        <div class="form_field">
+            <input type="checkbox" id="reg_rules">
+            <label for="reg_rules">Согласен с условиями</label>
+        </div>
+        <div class="form_field">
+            <button class="main_page__button main_page__button-primary main_page__button-login_form" type="submit">
+                Зарегистрироваться
+            </button>
+        </div>
+    </form>
+</div>
+
+<!--Burger menu-->
+<div class="burger_menu">
+    <a href="" class="burger_menu__button">
+        <span class="burger_menu__lines"></span>
+        <span class="burger_menu__lines"></span>
+        <span class="burger_menu__lines"></span>
+    </a>
+</div>
+
+<!--Header-->
+<section class="header">
+    <section class="wrapper">
+        <nav class="top_nav">
+            <a href="index.html" class="text_logo">
+                <h3 class="title">Авторские курсы</h3>
+            </a>
+            <div class="menu">
+                <a href="course_list.html">Курсы</a>
+                <a href="">События</a>
+                <a href="">О нас</a>
+                <a href="">Отзывы</a>
+                <a href="">FAQ</a>
+                <a href="">Контакты</a>
+            </div>
+            <a href="#" id="login_btn" class="main_page__button main_page__button-login">Вход и регистрация</a>
+        </nav>
+    </section>
+</section>
+
+<section class="course_title_block addonColorTwoBack">
+    <div class="course_title">
+        <h1 class="title title__white">
+            WEB-разработчик<br>
+            на Python
+        </h1>
+        <h2 class="title title__lessons">Расписание занятий</h2>
+    </div>
+    <div>
+        <img src="static/img/web_python_logo.svg">
+    </div>
+</section>
+
+
+<section class="content-block content-block__addon">
+    <div class="wrapper">
+        <div class="lessons_container">
+
+            <h2 class="title title__lessons" id="lessons_title">Расписание занятий</h2>
+            <div class="lessons lessons__info" id="lessons_info_block">
+                <div>Тема урока</div>
+                <div id="triangle_toggle">Дата и время<img alt="Сортировать" src="static/img/triangle.svg"
+                                                           id="triangle"/></div>
+            </div>
+
+            <div class="lessons lessons__item">
+                <div class="lesson__text">
+                    <h2>API. GraphQL и его реализация в Python. GraphQL и Django</h2>
+                    <p>Еще одним современным современным подходом к организации API является новый потокол GraphQL. На
+                        занятии мы в реальном
+                        времени разработаем реализацию бэкенда с таким API используя бибилотеку GraphQL и фреймворк
+                        Django</p>
+                </div>
+                <div class="lesson__date">03.12 - 20:00</div>
+            </div>
+
+            <div class="lessons lessons__item">
+                <div class="lesson__text">
+                    <h2>Софтскилз для разработчика</h2>
+                    <p>
+                        Программирование - это командный спорт. Для успешной работы требуются не только технические, но
+                        и коммуникационные навыки.
+                        И зачастую они оказываются важнее хард-скиллов. О том как жить и общаться в обществе
+                        программистов (да и не только)
+                        и будет это занятие
+                    </p>
+                </div>
+                <div class="lesson__date">06.12 - 20:00</div>
+            </div>
+
+            <div class="lessons lessons__item">
+                <div class="lesson__text">
+                    <h2>Fabric. Развертывание проекта на сервере.</h2>
+                    <p>
+                        Помимо непосредственно разработки, разработчикам часто приходится сталкиваться с процессом
+                        развертывания проекта на сервер.
+                        А что может быть лучше, чем автоматическое развертывание? Именно этим мы и займемся на нашем
+                        очередном семинаре.
+                        Мы разберем как сам процесс деплоя так и его автоматизацию с помощью библиотеки Fabric
+                    </p>
+
+                </div>
+                <div class="lesson__date">09.12 - 20:00</div>
+            </div>
+
+            <div class="lessons lessons__item">
+                <div class="lesson__text">
+                    <h2>Django m2m, select_related/prefetch_related, django debug toolbar, factory_boy, faker.</h2>
+                    <p>Вернемся непосредственно к вопросам разработки. ORM в Django - инструмент функциональный и
+                        гибкий. Но при неправильном
+                        использовании он может породить больше проблем, чем пользы. К счастью, в django есть множество
+                        инструментов
+                        для отладки и оптимизации.</p>
+                </div>
+                <div class="lesson__date">12.12 - 20:00</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="content-block content-block__black">
+    <div class="wrapper">
+        <div class="footer">
+            <a href="index.html" class="">
+                <h3 class="title title__white">Авторские курсы</h3>
+            </a>
+            <div class="footer__menu">
+                <a href="course_list.html">Курсы</a>
+                <a href="">События</a>
+                <a href="">О нас</a>
+                <a href="">Отзывы</a>
+                <a href="">FAQ</a>
+                <a href="">Контакты</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -4,6 +4,7 @@
 @import "vars";
 @import "mixins";
 @import "course_list";
+@import "lessons";
 
 body {
   font-family: Reg, sans-serif;
@@ -44,6 +45,10 @@ body {
     &-active {
       opacity: 1;
     }
+  }
+  &__lessons {
+    font-size: 1.5em;
+    text-align: start;
   }
 }
 
