@@ -20,7 +20,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     ],
 });
 
-module.exports = new Promise((resolve, rejecct) => {
+module.exports = new Promise((resolve, reject) => {
     resolve(devWebpackConfig);
 });
 

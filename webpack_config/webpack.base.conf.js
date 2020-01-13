@@ -99,10 +99,18 @@ module.exports = {
             filename: `${PATHS.static}css/[name].css`
         }),
         new HtmlWebpackPlugin({
-            hash: false,
-            template: `${PATHS.src}/index.html`,
-            filename: './index.html'
-        }),
+                hash: false,
+                template: `${PATHS.src}/index.html`,
+                filename: './index.html'
+            }
+        ),
+        new HtmlWebpackPlugin({
+                hash: false,
+                template: `${PATHS.src}/course_list.html`,
+                filename: './course_list.html'
+            },
+        ),
+
         new CopyWebpackPlugin([
             {from: `${PATHS.src}/${PATHS.static}img`, to: `${PATHS.static}img`},
             {from: `${PATHS.src}/${PATHS.static}fonts`, to: `${PATHS.static}css/fonts`},

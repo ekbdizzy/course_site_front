@@ -2,9 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Авторские курсы</title>
 </head>
 <body>
+
+<!--Hidden login_form block -->
+<div class="auth">
+    <div id="close_auth">X</div>
+    <div class="entry_title">
+        <div class="title title__login title__login-active" id="login_title">Войти</div>
+        <div class="title title__login" id="reg_title">Регистрация</div>
+    </div>
+
+    <!--Login form-->
+    <form class="login_form" action="">
+        <div class="form_field">
+            <label for="email">Электронная почта:</label>
+            <input class="input" type="email" id="email" placeholder="yourmail@mail.ru"/>
+        </div>
+        <div class="form_field">
+            <label for="password">Пароль:</label>
+            <input class="input" type="password" id="password" placeholder="Пароль"/>
+        </div>
+        <div class="form_field">
+            <button class="main_page__button main_page__button-primary main_page__button-login_form" type="submit">
+                Войти
+            </button>
+        </div>
+    </form>
+
+    <!--Registration form-->
+    <form class="registration_form" action="">
+        <div class="form_field">
+            <label for="reg_name">Ваше имя:</label>
+            <input class="input" type="text" id="reg_name" placeholder="Ваше имя"/>
+        </div>
+        <div class="form_field">
+            <label for="reg_email">Электронная почта:</label>
+            <input class="input" type="email" id="reg_email" placeholder="yourmail@mail.ru"/>
+        </div>
+        <div class="form_field">
+            <label for="reg_password">Пароль:</label>
+            <input class="input" type="password" id="reg_password" placeholder="Пароль"/>
+        </div>
+        <div class="form_field">
+            <input type="checkbox" id="reg_rules">
+            <label for="reg_rules">Согласен с условиями</label>
+        </div>
+        <div class="form_field">
+            <button class="main_page__button main_page__button-primary main_page__button-login_form" type="submit">
+                Зарегистрироваться
+            </button>
+        </div>
+    </form>
+</div>
+
+<!--Burger menu-->
 <div class="burger_menu">
     <a href="" class="burger_menu__button">
         <span class="burger_menu__lines"></span>
@@ -13,35 +66,38 @@
     </a>
 </div>
 
+<!--Header-->
 <section class="header">
     <section class="wrapper">
         <nav class="top_nav">
-            <a href="#" class="text_logo">
+            <a href="" class="text_logo">
                 <h3 class="title">Авторские курсы</h3>
             </a>
             <div class="menu">
-                <a href="">Курсы</a>
+                <a href="course_list.html">Курсы</a>
                 <a href="">События</a>
                 <a href="">О нас</a>
                 <a href="">Отзывы</a>
                 <a href="">FAQ</a>
                 <a href="">Контакты</a>
             </div>
-            <a href="#" class="main_page__button main_page__button-login">Вход и регистрация</a>
+            <a href="#" id="login_btn" class="main_page__button main_page__button-login">Вход и регистрация</a>
         </nav>
     </section>
 </section>
 
+<!--Promo-->
 <section class="promo" style="background: url('static/img/back_1.png') center no-repeat; width:100%; height:500px;">
     <div class="wrapper">
         <div class="promo__slogan">
             <h1>Авторские онлайн-курсы<br>
                 для профессионалов</h1>
-            <a href="" class="main_page__button main_page__button-primary">Посмотреть</a>
+            <a href="course_list.html" class="main_page__button main_page__button-primary">Посмотреть</a>
         </div>
     </div>
 </section>
 
+<!--Course list-->
 <section class="content-block content-block__addon">
     <h3 class="title">Популярные курсы</h3>
     <div class="wrapper">
@@ -93,10 +149,11 @@
         </div>
     </div>
     <div class="align-center">
-        <a href="#" class="main_page__button main_page__button-primary">Все курсы</a>
+        <a href="course_list.html" class="main_page__button main_page__button-primary">Все курсы</a>
     </div>
 </section>
 
+<!--Teachers-->
 <section class="content-block">
     <h3 class="title">Преподаватели</h3>
     <div class="wrapper">
@@ -127,6 +184,8 @@
         </div>
     </div>
 </section>
+
+<!--Features-->
 <section class="content-block content-block__primary">
     <div class="wrapper">
         <div class="features">
@@ -152,6 +211,7 @@
     </div>
 </section>
 
+<!--Graduated-->
 <section class="content-block content-block">
     <div class="wrapper">
         <h2 class="title">Наших выпускников ждут:</h2>
@@ -168,14 +228,15 @@
     </div>
 </section>
 
+<!--Footer-->
 <footer class="content-block content-block__black">
     <div class="wrapper">
         <div class="footer">
-            <a href="#" class="">
+            <a href="index.html" class="">
                 <h3 class="title title__white">Авторские курсы</h3>
             </a>
             <div class="footer__menu">
-                <a href="">Курсы</a>
+                <a href="course_list.html">Курсы</a>
                 <a href="">События</a>
                 <a href="">О нас</a>
                 <a href="">Отзывы</a>
