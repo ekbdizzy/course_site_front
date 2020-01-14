@@ -46,6 +46,7 @@ body {
       opacity: 1;
     }
   }
+
   &__lessons {
     font-size: 1.5em;
     text-align: start;
@@ -119,6 +120,11 @@ body {
   justify-content: flex-start;
   align-content: center;
   color: white;
+
+  .login_form, .registration_form {
+    margin: 0 auto;
+    max-width: 400px;
+  }
 
   .login_form {
     display: block;
