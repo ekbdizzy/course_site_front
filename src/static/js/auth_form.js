@@ -2,7 +2,7 @@
 import axios from 'axios'
 
 
-const HOST = 'http://167.172.145.174:8001';
+const HOST = 'http://67.205.130.122';
 // const HOST = 'http://localhost:8000';
 const LOGIN_URL = `${HOST}/api/user/login/`,
     REGISTRATION_URL = `${HOST}/api/user/register/`;
