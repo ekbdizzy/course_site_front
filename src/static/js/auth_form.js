@@ -1,8 +1,11 @@
 'use strict';
 import axios from 'axios'
 
-const LOGIN_URL = 'http://localhost:8000/api/user/login/';
-const REGISTRATION_URL = 'http://localhost:8000/api/user/register/';
+
+const HOST = 'http://167.172.145.174:8001';
+// const HOST = 'http://localhost:8000';
+const LOGIN_URL = `${HOST}/api/user/login/`,
+    REGISTRATION_URL = `${HOST}/api/user/register/`;
 
 
 function login() {

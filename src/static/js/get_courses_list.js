@@ -1,7 +1,7 @@
 'use strict';
 import axios from 'axios'
 
-const HOST = 'http://localhost:8000',
+const HOST = 'http://167.172.145.174:8001',
     COURSES_LIST_URL = `${HOST}/api/course/list`,
     PAGE_TITLE = 'Список курсов';
 
