@@ -7,7 +7,7 @@ npm run build
 
 ### Webpack development server
 ~~~
-npm run dev
+npm run start
 ~~~
 
 ### Webpack config:

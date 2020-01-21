@@ -21,7 +21,7 @@ function login() {
                     "password": password.value
                 }
             ).then(response => {
-                document.cookie = "token=" + response['data']['token'];
+                localStorage.setItem("token", response['data']['token']);
                 alert(`Welcome, ${response['data']['email']}!`)
 
             }).catch((err) => {
