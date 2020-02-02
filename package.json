@@ -1,6 +1,5 @@
 {
-  "name": "webpack_template",
-  "version": "1.0.0",
+  "private": true,
   "description": "Webpack template for frontend projects",
   "main": "index.js",
   "devDependencies": {
