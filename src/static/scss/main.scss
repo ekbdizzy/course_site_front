@@ -266,11 +266,14 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     text-align: center;
+    visibility: visible;
+
 
     @media screen and (max-width: $tableWidth) {
-      display: none;
       flex-direction: column;
       font-size: larger;
+      visibility: hidden;
+      height: 0;
     }
   }
 

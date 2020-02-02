@@ -7,10 +7,13 @@ function burgerMenu(selector) {
     burgerButton.addEventListener('click', (e) => {
         e.preventDefault();
         burgerButton.classList.toggle('burger_menu__active');
-        if (menu.style.display !== 'flex') {
-            menu.style.display = 'flex';
+        if (menu.style.visibility === 'visible') {
+            menu.style.visibility = 'hidden';
+            menu.style.height = '0';
+
         } else {
-            menu.style.display = 'none';
+            menu.style.visibility = 'visible';
+            menu.style.height = '100%';
         }
     })
 }
@@ -24,7 +27,7 @@ function loginForm(selector) {
         loginForm = document.querySelector('.login_form'),
         registrationForm = document.querySelector('.registration_form');
 
-    function SetDefaultToLogin() {
+    function setDefaultToLogin() {
         loginForm.style.display = 'block';
         registrationForm.style.display = 'none';
         registrationTitle.classList.remove('title__login-active');
@@ -41,12 +44,12 @@ function loginForm(selector) {
         e.preventDefault();
         authForm.style.top = '-150%';
         document.body.style.overflow = "auto";
-        SetDefaultToLogin();
+        setDefaultToLogin();
     });
 
     loginTitle.addEventListener('click', (e) => {
         e.preventDefault();
-        SetDefaultToLogin();
+        setDefaultToLogin();
     });
 
     registrationTitle.addEventListener('click', (e) => {
