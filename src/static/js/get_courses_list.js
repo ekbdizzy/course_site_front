@@ -19,8 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         const id = item.id,
                             title = item.title,
                             description = item.description,
-                            start_date = item.start_date,
-                            price = item.price,
+                            startDate = item.start_date,
                             duration = item.duration,
                             icon = `${HOST}${item.icon}`;
 
@@ -31,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     <p class="course_item__text">${description}</p>
                                     <a href="" class="main_page__button main_page__button-info">Перейти к курсу</a>
                                     <div class="course_item__text">
-                                        <span>Старт: ${start_date}</span>
+                                        <span>Старт: ${startDate}</span>
                                         <span>Продолжительность: ${duration}</span>
                                     </div>
                                 </div>
